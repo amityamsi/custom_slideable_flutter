@@ -1,9 +1,9 @@
 name: custom_slidable
 description: A Custom Slidable package
 version: 0.0.1
-homepage: https://example.com
+homepage: https://github.com/amityamsi/custom_slideable_flutter
 environment:
-  sdk: ^3.10.1
+  sdk: ">=3.10.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
