@@ -20,7 +20,41 @@ A lightweight, customizable, and easy-to-use slideable widget for Flutter — in
 
 ## 🚀 Getting Started
 
+## Install
+
 Add this line to your **pubspec.yaml**:
 
+```yaml
 dependencies:
   custom_slidable: ^0.0.1
+```
+
+In your library add the following import:
+
+```dart
+import 'package:custom_slidable/custom_slidable/custom_slidable.dart';
+```
+
+## Getting started
+
+Example:
+
+```dart
+CustomSlidable(
+              endActionPane: ActionPane(
+                motion: ScrollMotion(),
+                children: [
+                  CustomSlidableAction(
+                    onPressed: (_) {},
+                    backgroundColor: Colors.red,
+                    icon: SizedBox(child: Icon(Icons.delete)),
+                  ),
+                ],
+              ),
+              child: ListTile(
+                title: Text("Item \$index"),
+                subtitle: const Text("Swipe right → left"),
+              ),
+            );
+```
+
